@@ -6,5 +6,3 @@ Feature: 01. Testing API-Gateway using REST API (Import json file)
     Scenario: API_CLD_GW_01_Import a json file in API Gateway.
         Given Login to API gateway as Administrator
         Then Click on APIs link
-
-
