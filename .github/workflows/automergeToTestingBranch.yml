@@ -11,7 +11,7 @@ jobs:
     if: github.event.review.state == 'approved' || !github.event.review
     runs-on: ubuntu-latest
     steps:
-      - uses: reitermarkus/automerge@v1
+      - uses: actions/automerge@v1
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           merge-method: rebase
