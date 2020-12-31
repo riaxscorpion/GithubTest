@@ -8,7 +8,6 @@ module.exports = {
         await browser.sleep(3000);
         await element(by.linkText(obj.baseModule.headerLinks.APIlink)).click();
         await browser.sleep(3000);
-        await console.log("Changed from gitHub");
     },
 
     clickApplicationsHeader: async function(){
