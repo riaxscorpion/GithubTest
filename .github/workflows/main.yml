@@ -36,15 +36,13 @@ jobs:
           node-version: '14.x'
 
       # Runs a single command using the runners shell
-      
-      - name: Install necessary npm packages
-        run: 
-          npm init -y
-          npm install
-          npm install protractor
-          npm run build --if-present
-          npx webdriver-manager update --versions.chrome=86.0.4240.22
-          npm audit fix --force
+        
+      - run: npm init -y
+      - run: npm install
+      - run: npm install protractor
+      - run: npm run build --if-present
+      - run: npx webdriver-manager update --versions.chrome=86.0.4240.22
+      - run: npm audit fix --force
         
         if: ${{ always() }}
       - run: npm run apitests
