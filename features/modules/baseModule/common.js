@@ -8,6 +8,10 @@ module.exports = {
         await browser.wait(EC.visibilityOf(element(by.xpath(obj.createAPIs.manageAPI.activateAPIWindow)), 10000, "Activation Window does not appear"));
         await element(by.xpath(obj.createAPIs.manageAPI.activateAPIYesButton)).click();
         await browser.wait(EC.visibilityOf(element(by.linkText(obj.baseModule.headerLinks.APIlink)), 180000, "API LINK TEXT NOT FOUND"));
+    },
+
+    changesByRiax: async function(){
+        console.log("Changes done by riax");
     }
 
 }
