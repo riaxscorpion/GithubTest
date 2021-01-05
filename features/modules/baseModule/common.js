@@ -8,7 +8,7 @@ module.exports = {
         await browser.wait(EC.visibilityOf(element(by.xpath(obj.createAPIs.manageAPI.activateAPIWindow)), 10000, "Activation Window does not appear"));
         await element(by.xpath(obj.createAPIs.manageAPI.activateAPIYesButton)).click();
         await browser.wait(EC.visibilityOf(element(by.linkText(obj.baseModule.headerLinks.APIlink)), 180000, "API LINK TEXT NOT FOUND"));
-        await browser.sleep(5000);
+        await browser.sleep(15000);
         console.log("changed as a chethan branch");
     },
 
