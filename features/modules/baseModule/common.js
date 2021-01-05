@@ -12,6 +12,10 @@ module.exports = {
         console.log("changed as a chethan branch");
     },
 
+    changesByRiax: async function(){
+        console.log("Changes done by riax");
+    },
+
     verifyNotActiveWindow: async function(){
         console.log("A method written to commit in chethan's branch");
     }
